@@ -1,0 +1,150 @@
+/* Базовые стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Хедер */
+.header {
+    text-align: center;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: #fff;
+    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Основной контент */
+.main-content {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.photo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Рамка для фото */
+.photo-frame {
+    display: inline-block;
+    padding: 10px;
+    border: 8px solid #ff7eb3;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.photo-frame:hover {
+    transform: scale(1.05);
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.photo-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Секция с историей */
+.story-section {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.story-section h2 {
+    font-size: 1.8rem;
+    color: #ff7eb3;
+    margin-bottom: 10px;
+}
+
+/* Футер */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .photo-frame {
+        width: 90%;
+        padding: 5px;
+        border: 5px solid #ff7eb3;
+    }
+
+    .photo {
+        max-width: 100%;
+    }
+
+    .story-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .story-section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .photo-frame {
+        width: 100%;
+        border: 4px solid #ff7eb3;
+    }
+
+    .photo-caption {
+        font-size: 0.9rem;
+    }
+
+    .story-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .story-section {
+        padding: 8px;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
